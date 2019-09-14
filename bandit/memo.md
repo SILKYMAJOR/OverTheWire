@@ -7,33 +7,57 @@ bandit0
 ## level1  
 ssh bandit1@bandit.labs.overthewire.org -p 2220  
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1  
-  
+```
 cat < -
-
+```
 ## level2 
 ssh bandit2@bandit.labs.overthewire.org -p 2220  
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9  
-
+```
 cat < "spaces in this filename"
-
+```
 ## level3 
 ssh bandit3@bandit.labs.overthewire.org -p 2220  
 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK  
-
+```
 cat inhere/.hidden
-
+```
 ## level4 
 ssh bandit4@bandit.labs.overthewire.org -p 2220  
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
-
+```
 cat < -file07
-
+```
 ## level5 
-ssh bandit5@bandit.labs.overthewire.org -p 2220 
+ssh bandit5@bandit.labs.overthewire.org -p 2220  
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh  
-
+```
 find /home/bandit5/inhere/ -size 1033c -exec cat {} \;
-
+```
 ## level6
-ssh bandit6@bandit.labs.overthewire.org -p 2220 
+ssh bandit6@bandit.labs.overthewire.org -p 2220  
 DXjZPULLxYr17uwoI01bNLQbtFemEgo7  
+```
+find / -size 33c -user bandit7 -group bandit6 -print 2> /dev/null | while read -r f; do cat $f; done
+```
+## level7
+ssh bandit7@bandit.labs.overthewire.org -p 2220  
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs  
+```
+cat data.txt | grep millionth | awk -F'\t' '{print $2}'
+```
+## level8
+ssh bandit8@bandit.labs.overthewire.org -p 2220  
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV  
+```
+cat data.txt | sort | uniq -c | sort | tail -1 | awk -F' ' '{print $2}'
+```
+## level9
+ssh bandit9@bandit.labs.overthewire.org -p 2220  
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR  
+```
+strings data.txt | grep -G "=" | grep -E '^=+'
+```
+## level10
+ssh bandit10@bandit.labs.overthewire.org -p 2220  
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk  

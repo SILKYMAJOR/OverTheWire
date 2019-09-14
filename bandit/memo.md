@@ -3,6 +3,9 @@
 ## level0  
 ssh bandit0@bandit.labs.overthewire.org -p 2220  
 bandit0  
+```
+cat readme
+```
 
 ## level1  
 ssh bandit1@bandit.labs.overthewire.org -p 2220  

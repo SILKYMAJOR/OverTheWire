@@ -153,13 +153,21 @@ kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
 ssh bandit19@bandit.labs.overthewire.org -p 2220  
 IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x 
 ```
+./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 ## level20
 ssh bandit20@bandit.labs.overthewire.org -p 2220  
-
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j  
+```
+echo 'GbKksEFF4yrVs6il55v6gwY5aVje5f0j' | nc -l -p 25002 &
+./suconnect 25002
+```
 ## level21
 ssh bandit21@bandit.labs.overthewire.org -p 2220  
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr  
+```
 
+```
 ## level22
 ssh bandit22@bandit.labs.overthewire.org -p 2220  
 

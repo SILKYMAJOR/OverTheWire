@@ -107,10 +107,82 @@ gzip -d data8.bin.gz
 file data8.bin
 cat data8.bin
 ```
-
 ## level13
 ssh bandit13@bandit.labs.overthewire.org -p 2220  
 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL  
 ```
-
+ssh -i sshkey.private bandit14@127.0.0.1
+cat /etc/bandit_pass/bandit14
 ```
+## level14
+ssh bandit14@bandit.labs.overthewire.org -p 2220  
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e  
+```
+echo '4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e' | netcat 127.0.0.1 30000
+```
+## level15
+ssh bandit15@bandit.labs.overthewire.org -p 2220  
+BfMYroe26WYalil77FoDi9qh59eK5xNr  
+```
+echo 'BfMYroe26WYalil77FoDi9qh59eK5xNr' |openssl s_client -ign_eof -connect 127.0.0.1:30001
+```
+## level16
+ssh bandit16@bandit.labs.overthewire.org -p 2220  
+cluFn7wTiGryunymYOu4RcffSxQluehd  
+```
+nmap 127.0.0.1 -sT -p 31000-32000
+echo 'cluFn7wTiGryunymYOu4RcffSxQluehd' |openssl s_client -ign_eof -connect 127.0.0.1:31790
+```
+vim 17_sshkey  
+chmod 600 17_sshkey  
+ssh -i 17_sshkey bandit17@bandit.labs.overthewire.org -p 2220
+```
+cat /etc/bandit_pass/bandit17
+```
+## level17
+ssh bandit17@bandit.labs.overthewire.org -p 2220  
+xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn  
+```
+diff passwords.old passwords.new
+```
+## level18
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme  
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd  
+
+## level19
+ssh bandit19@bandit.labs.overthewire.org -p 2220  
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x 
+```
+```
+## level20
+ssh bandit20@bandit.labs.overthewire.org -p 2220  
+
+## level21
+ssh bandit21@bandit.labs.overthewire.org -p 2220  
+
+## level22
+ssh bandit22@bandit.labs.overthewire.org -p 2220  
+
+## level23
+ssh bandit23@bandit.labs.overthewire.org -p 2220  
+
+## level24
+ssh bandit24@bandit.labs.overthewire.org -p 2220  
+
+## level25
+ssh bandit25@bandit.labs.overthewire.org -p 2220  
+
+## level26
+ssh bandit26@bandit.labs.overthewire.org -p 2220  
+
+## level27
+ssh bandit27@bandit.labs.overthewire.org -p 2220  
+
+## level28
+ssh bandit28@bandit.labs.overthewire.org -p 2220  
+
+## level29
+ssh bandit29@bandit.labs.overthewire.org -p 2220  
+
+## level30
+ssh bandit30@bandit.labs.overthewire.org -p 2220  

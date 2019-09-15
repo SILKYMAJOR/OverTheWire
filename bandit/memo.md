@@ -64,3 +64,53 @@ strings data.txt | grep -G "=" | grep -E '^=+'
 ## level10
 ssh bandit10@bandit.labs.overthewire.org -p 2220  
 truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk  
+```
+cat data.txt | base64 -d
+```
+## level11
+ssh bandit11@bandit.labs.overthewire.org -p 2220  
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR  
+```
+cat data.txt | tr A-Z N-ZA-M | tr a-z n-za-m
+```
+## level12
+ssh bandit12@bandit.labs.overthewire.org -p 2220  
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu  
+```
+mkdir /tmp/silky
+cp -p data.txt /tmp/silky/data.txt
+cd /tmp/silky
+xxd -r data.txt > data
+file data
+mv data data.gz
+gzip -d data.gz
+file data
+bzip2 -d data
+file data.out
+mv data.out data.gz
+gzip -d data.gz
+file data
+tar -xf data
+ls
+file data5.bin
+tar -xf data5.bin
+ls
+file data6.bin
+bzip2 -d data6.bin
+ls
+file data6.bin.out
+tar -xf data6.bin.out
+ls
+file data8.bin
+mv data8.bin data8.bin.gz
+gzip -d data8.bin.gz
+file data8.bin
+cat data8.bin
+```
+
+## level13
+ssh bandit13@bandit.labs.overthewire.org -p 2220  
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL  
+```
+
+```

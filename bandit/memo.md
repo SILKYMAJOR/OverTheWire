@@ -218,7 +218,7 @@ v
 e: /etc/bandit_pass/bandit26
 ```
 ## level26
-**Change terminal to 5 lines** 
+**Change terminal to 5 lines**   
 ssh bandit26@bandit.labs.overthewire.org -p 2220  
 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z  
 ```
@@ -262,8 +262,44 @@ git checkout remotes/origin/dev
 cat README.md
 ```
 ## level30
-ssh bandit30@bandit.labs.overthewire.org -p 2220 
+ssh bandit30@bandit.labs.overthewire.org -p 2220   
 5b90576bedb2cc04c86a9e924ce42faf  
 ```
-
+mkdir /tmp/bandit30/tmp30; cd $_
+git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
+yes
+5b90576bedb2cc04c86a9e924ce42faf
+cd repo
+cat .git/packed-refs
+git show --name-only secret
 ``` 
+## level31
+ssh bandit31@bandit.labs.overthewire.org -p 2220  
+47e603bb428404d265f59c42920d81e5  
+```
+mkdir /tmp/bandit31/tmp31; cd $_
+git clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+yes
+47e603bb428404d265f59c42920d81e5
+cd repo
+cat README.md
+echo 'May I come in?' > key.txt
+rm .gitignore
+git add key.txt
+git commit -m add
+git push origin master
+yes
+47e603bb428404d265f59c42920d81e5
+```
+## level32
+ssh bandit32@bandit.labs.overthewire.org -p 2220  
+56a9bf19c63d650ce78e6ec0354ee45e  
+```
+$0
+cat /etc/bandit_pass/bandit33
+```
+## level33
+ssh bandit33@bandit.labs.overthewire.org -p 2220  
+c9c3199ddf4121b10cf581a98d51caee  
+```
+```

